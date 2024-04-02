@@ -1,0 +1,30 @@
+.header-container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    height: 10vh;
+    min-height: 5vh;
+}
+.postal-code {
+    margin-right: 15px;
+    margin-left: 15px;
+    max-width: 100px;
+    flex-grow: 1;
+}
+.produce-pal-logo-container {
+    margin-left: 15px;
+    flex-grow: 5;
+}
+.popup-container {
+    max-width: 50px;
+    flex-grow: 1;
+    margin-right: 15px;
+}
+.cart-button {
+    width: 6vh;
+    height: 5vh;
+}
+.cart-logo {
+    width: 90%;
+    height: 90%;
+}

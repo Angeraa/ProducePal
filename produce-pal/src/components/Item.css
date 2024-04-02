@@ -1,0 +1,104 @@
+:root {
+    --textcolor: white;
+}
+.wrapper {
+    background-color: green;
+    width: 40vw;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.item-header {
+    position: relative;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    min-height: 6vh;
+}
+.item-container {
+    display: flex;
+    flex-direction: row;
+}
+.description {
+    margin: 0px 5px;
+}
+.name {
+    font-size: 20px;
+    color: var(--textcolor);
+    text-align: left;
+    margin-bottom: 10px;
+    text-wrap: balance;
+}
+.price {
+    font-size: 18px;
+    color: var(--textcolor);
+    text-align: left;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.valid-date {
+    font-size: 14px;
+    color: var(--textcolor);
+    text-align: left;
+    margin-left: 5px;
+    
+}
+.merchant {
+    font-size: 20px;
+    color: var(--textcolor);
+    text-align: left;
+    margin-left: 10px;
+    text-align: center;
+}
+.merchant-logo {
+    width: 50px;
+    width: 50px;
+}
+.item-image {
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    max-height: 200px;
+}
+.add-button {
+    position: absolute;
+    right: 0;
+    bottom: 10;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: var(--textcolor);
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 768px) {
+    .item-container {
+        flex-direction: column;
+    }
+    .item-image {
+        width: 100%;
+        height: 100%;
+    }
+    .merchant-logo {
+        width: 50px;
+        width: 50px;
+    }
+    .name {
+        font-size: 16px;
+    }
+    .price {
+        font-size: 14px;
+    }
+    .valid-date {
+        font-size: 12px;
+    }
+    .merchant {
+        font-size: 14px;
+    }
+    
+}
