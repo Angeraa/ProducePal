@@ -8,7 +8,7 @@ export const PostalContext = createContext({
 
 // Create a provider component
 export const PostalContextProvider = ({ children }) => {
-    const [postalCode, setPostalCode] = useState('M9V2Z6');
+    const [postalCode, setPostalCode] = useState('N2L1A1');
 
     return (
         <PostalContext.Provider value={{ postalCode, setPostalCode }}>

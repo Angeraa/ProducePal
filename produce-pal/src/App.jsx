@@ -1,7 +1,7 @@
 import React from 'react'
 import './App.css'
 import { PostalContextProvider } from './components/PostalContext'
-import { ShoppingListProvider } from './components/ShoppingListContext'
+import { ShoppingCartProvider } from './components/ShoppingCartContext'
 import SearchBar from './components/SearchBar'
 import SearchGrid from './components/SearchGrid'
 import Header from './components/Header'
@@ -13,13 +13,13 @@ const App = () => {
   return (
     <div className='App'>
       <PostalContextProvider>
-        <ShoppingListProvider>
+        <ShoppingCartProvider>
           <Header/>
           <div className='search-container'>
             <SearchBar setQuery={ setResults }/>
             <SearchGrid items={ results }/>
           </div>
-        </ShoppingListProvider>
+        </ShoppingCartProvider>
       </PostalContextProvider>
     </div>
   )

@@ -1,23 +1,24 @@
-.postal-wrapper {
-    max-width: 85px;
-    min-width: 85px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5px;
-    background-color: green;
-    border-radius: 5px;
-}
 .popup {
-    width: 100%;
-    height: 6vh;
-    min-width: 95%;
-    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vh;
+    max-width: 120px;
+    min-width: 100px;
+    min-height: 70px;
+    max-height: 70px;
+    flex-grow: 1;
+    margin: 10px;
+    padding: 5px;
+    border: 5px solid green;
+    border-radius: 5px;
+    font-size: 1rem;
 }
 
 .input-box {
     height: 10vh;
-    width: 15vw;
+    width: 12vw;
     font-size: large;
     border: 2px solid green;
+    padding: 5px;
 }
