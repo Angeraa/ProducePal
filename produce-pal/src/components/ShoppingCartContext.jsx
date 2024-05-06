@@ -4,7 +4,7 @@ export const ShoppingCartContext = createContext({
         shoppingCart: [],
         addItem: () => {},
         removeItem: () => {},
-        clearList: () => {},
+        clearCart: () => {},
 });
 
 export const ShoppingCartProvider = ({ children }) => {

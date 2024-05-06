@@ -4,7 +4,7 @@ import { ShoppingCartContext } from './ShoppingCartContext.jsx';
 import CartItem from './CartItem.jsx';
 
 const ShoppingCart = () => {
-    const {shoppingCart} = useContext(ShoppingCartContext);
+    const {shoppingCart, clearCart} = useContext(ShoppingCartContext);
     const [total, setTotal] = useState(0);
     const [madeChange, setMadeChange] = useState(false);
 
@@ -16,6 +16,15 @@ const ShoppingCart = () => {
         setTotal(total.toFixed(2));
         setMadeChange(false);
     }, [madeChange]);
+
+    useEffect(() => {
+        var cartItems = document.getElementsByClassName('cart-item-list');
+        var titles = document.getElementsByClassName('shopping-list-titles');
+        if (cartItems.length !== 0 && titles.length !== 0) {
+            var scrollBarWidth = cartItems[0].offsetWidth - cartItems[0].clientWidth;
+            titles[0].style.paddingRight = scrollBarWidth + 'px';
+        }  
+    }, [shoppingCart]);
 
     if (shoppingCart !== undefined && shoppingCart.length !== 0) {
         console.log("Displaying Shopping Cart\n");
@@ -35,8 +44,9 @@ const ShoppingCart = () => {
                         <CartItem key={item.name} item={item} setMadeChange={setMadeChange}/>
                     ))}
                 </div>
-                <div className='shopping-list-total'>
-                    Total Price: {total}
+                <div className='shopping-list-footer'>
+                    <div className='total-price'>Total Price: {total}</div>
+                    <button className='clear-button' onClick={() => clearCart()}>Clear Cart</button>
                 </div>
             </div>
         )

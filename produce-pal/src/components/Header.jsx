@@ -10,7 +10,9 @@ const Header = () => {
   return (
     <div className='header-container'>
       <div className='produce-pal-logo-container'>
-        Produce Pal
+        <div className='logo'>
+          Produce Pal
+        </div>
       </div>
       <Popup trigger={<button className='cart-button'><CiShoppingCart className='cart-logo'/></button>} position="left top">
         <ShoppingCart />

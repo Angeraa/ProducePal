@@ -8,11 +8,14 @@ const PostalCode = () => {
     const [inputPostal, setInputPostal] = useState("")
     return (
         <Popup trigger={<button className='popup'>{postalCode}</button>} position={'bottom right'}>
-            <div>
+            <div className='postal-change-wrapper'>
+                <p className='postal-change-instructions'>
+                    Please enter your postal code in the box below and press Enter to confirm.
+                </p>
                 <input
                     className='input-box'
                     type='text'
-                    placeholder="New Postal Code"
+                    placeholder="Postal Code"
                     value={inputPostal}
                     onChange={(e) => setInputPostal(e.target.value)}
                     onKeyDown={(e) => e.key === 'Enter' ? setPostalCode(inputPostal.toUpperCase()) : null}

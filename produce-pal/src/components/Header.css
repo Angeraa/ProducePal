@@ -1,9 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 .header-container {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     height: 10vh;
     min-height: 5vh;
+    margin-top: 10px;
+    margin-right: 20px;
 }
 .postal-code {
     margin-right: 15px;
@@ -14,20 +17,24 @@
 .produce-pal-logo-container {
     margin-left: 15px;
     flex-grow: 5;
+}
+.logo {
+    font-family: 'Pacifico', cursive;
     font-size: 4rem;
+    color: white;
 }
 @media screen and (max-width: 800px){
-    .produce-pal-logo-container {
+    .logo {
         font-size: 3rem;
     }    
 }
 @media screen and (max-width: 600px){
-    .produce-pal-logo-container {
+    .logo {
         font-size: 2rem;
     }
 }
 @media screen and (max-width: 400px){
-    .produce-pal-logo-container {
+    .logo {
         font-size: 1.5rem;
     }    
 }
@@ -44,6 +51,7 @@
     padding: 5px;
     border: 5px solid green;
     border-radius: 5px;
+    box-shadow: 5px 5px 8px rgba(0,0,0,0.5);
 }
 .cart-logo {
     margin-left: 2%;
