@@ -15,7 +15,7 @@ const ShoppingCart = () => {
         });
         setTotal(total.toFixed(2));
         setMadeChange(false);
-    }, [madeChange]);
+    }, [madeChange, shoppingCart]);
 
     useEffect(() => {
         var cartItems = document.getElementsByClassName('cart-item-list');

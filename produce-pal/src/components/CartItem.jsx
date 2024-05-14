@@ -10,6 +10,7 @@ const CartItem = ({item, setMadeChange}) => {
             setNumber(number - 1);
             setMadeChange(true);
         } else {
+            setMadeChange(true);
             removeItem(item);
         }
     }
