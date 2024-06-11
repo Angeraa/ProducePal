@@ -11,8 +11,10 @@ const Item = ({item}) => {
   return (
     <div className='wrapper'>
         <div className='item-header'>
-            <img src={item.merchant_logo} className='merchant-logo'/>
-            <b className='merchant'>{item.merchant}</b>
+            <div>
+              <img src={item.merchant_logo} className='merchant-logo'/>
+              <b className='merchant'>{item.merchant}</b>
+            </div>
             <button className='add-button' 
                     onClick={() => buttonHandler(item)}>
               {shoppingCart.includes(item) ? "Remove from cart" : "Add to cart"}

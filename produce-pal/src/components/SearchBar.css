@@ -27,6 +27,6 @@ input:focus {
 .search-input {
     width: 90%;
     border: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     outline: none;
 }

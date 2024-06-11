@@ -12,9 +12,15 @@
 .item-header {
     position: relative;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     margin-bottom: 10px;
     align-items: center;
     min-height: 6vh;
+}
+.item-header > div {
+    display: flex;
+    align-items: center;
 }
 .item-container {
     display: flex;
@@ -58,27 +64,30 @@
 .item-image {
     width: auto;
     height: auto;
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 150px;
+    max-height: 150px;
 }
 .add-button {
-    position: absolute;
-    right: 0;
-    bottom: 10;
+    
     margin: 10px;
     padding: 5px 10px;
     border-radius: 5px;
     background-color: var(--textcolor);
     color: green;
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
 
 }
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
+    .item-header {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 800px) {
     .item-container {
         flex-direction: column;
+        align-items: center;
     }
     .item-image {
         width: 100%;
@@ -100,5 +109,7 @@
     .merchant {
         font-size: 14px;
     }
-    
+    .add-button {
+        font-size: 0.75rem;
+    }
 }

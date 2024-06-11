@@ -37,11 +37,11 @@ const CartItem = ({item, setMadeChange}) => {
             <div className='cart-item-buttons'>
                 <button className='item-increase-button' 
                 onClick={() => HandleIncrease()}>
-                    Increase
+                    {">"}
                 </button>
                 <button className='item-decrease-button' 
                 onClick={() => HandleDecrease()}>
-                    Decrease
+                    {"<"}
                 </button>
             </div>
         </div>

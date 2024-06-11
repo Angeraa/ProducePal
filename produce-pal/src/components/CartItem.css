@@ -31,28 +31,39 @@
     justify-content: center;
     align-items: center;
     flex-shrink: 5;
-    height: 1rem;
-    width: 1rem;
+    height: 15px;
+    width: 15px;
     background-color: green;
     border: 3px, solid, black;
     box-shadow: 5px, 5px, 10px, black;
-    max-width: 40px;
-    max-height: 40px;
     margin: 5px;
-    font-size: 0.25rem;
+    font-size: 10px;
 }
 .item-decrease-button {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-shrink: 5;
-    height: 1rem;
-    width: 1rem;
+    height: 15px;
+    width: 15px;
     background-color: rgb(203, 33, 33);
     border: 3px, solid, black;
     box-shadow: 5px, 5px, 10px, black;
-    max-width: 40px;
-    max-height: 40px;
     margin: 5px;
-    font-size: 0.25rem;
+    font-size: 10px;
+}
+
+@media screen and (maxwidth: 800px) {
+    .item-decrease-button {
+        height: 7.5px;
+        width: 7.5px;
+        font-size: 5px;
+        border-width: 1.5px;
+    }
+    .item-increase-button {
+        height: 7.5px;
+        width: 7.5px;
+        font-size: 5px;
+        border-width: 1.5px;
+    }
 }
